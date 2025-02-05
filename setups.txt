@@ -1,5 +1,0 @@
-1- pip3 install dimod
-
-2- pip3 install dwave-system
-
-3- sign up for token https://cloud.dwavesys.com/leap/signup

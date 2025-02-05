@@ -12,12 +12,12 @@ blp.add_constraint(x0 + x2 <= 1, "First constraint")
 
 blp.add_constraint(3*x0 -x1 + 3*x2 <= 4, "Second constraint")
 
-# print("Our variables are:") 
-# print(blp.variables) 
-# print("Our objective is:") 
-# print(blp.objective) 
-# print("Our constraints are:") 
-# print(blp.constraints)
+print("Our variables are:") 
+print(blp.variables) 
+print("Our objective is:") 
+print(blp.objective) 
+print("Our constraints are:") 
+print(blp.constraints)
 
 sample1 = {"x0":1, "x1":1, "x2":1}
 print("The assignment is", sample1)

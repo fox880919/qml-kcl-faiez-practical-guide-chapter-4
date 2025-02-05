@@ -1,0 +1,47 @@
+
+Virtual envronment:
+
+1- python3 -m venv my_qiskit_env
+
+2- source my_qiskit_env/bin/activate
+
+3- pip3 install qiskit
+
+==============
+
+Install libraries:
+
+1- pip3 install dimod
+
+2- 3- sign up for token https://cloud.dwavesys.com/leap/signup
+
+3- pip3 install dwave-system
+
+4- pip3 install greedy
+
+5- pip3 install dwave-neal
+
+6- pip3 install dwave-tabu
+
+
+==============
+
+New dwave SDK:
+
+1- pip3 install dwave-ocean-sdk 
+// https://github.com/dwavesystems/dwave-ocean-sdk
+
+2- dwave auth login
+
+3- dwave auth get  ==> API token
+
+4- dwave setup --auth
+
+5- dwave config create --auto-token
+
+6- dwave config create --full
+
+
+
+
+

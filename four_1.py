@@ -15,9 +15,7 @@ from dwave.system import DWaveSampler
 
 from dwave.system import EmbeddingComposite 
 
-# from dwave.drivers import __license__
-
-dwaveSampler = DWaveSampler(token='')
+dwaveSampler = DWaveSampler()
 
 sampler = EmbeddingComposite(dwaveSampler) 
 
@@ -27,5 +25,8 @@ print("The solutions that we have obtained are")
 
 print(result)
 
-# api token is needed but I can't sign up 
+
+# from dwave.drivers import __license__
+
+# access token: vnTVmTNnAo4Mch6LjBovLo8Z7VDH8r
 

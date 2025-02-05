@@ -1,11 +1,12 @@
+import dimod
 from dwave.cloud import Client
 
-#token is needed
 for solver in Client.from_config().get_solvers():
     print(solver)
 
-
 from dwave.system import DWaveSampler 
+from dwave.system import EmbeddingComposite 
+
 sampler=DWaveSampler(solver='DW_2000Q_6') 
 print("Name:",sampler.properties["chip_id"])
 print("Number of qubits:",sampler.properties["num_qubits"]) 
@@ -45,7 +46,6 @@ result = sampler.sample(triangle, num_reads=10, annealing_time = 100)
 print("The samples obtained are")
 print(result)
 
-
 forward_schedule=[[0.0, 0.0], [5.0, 0.25], [25, 0.75], [30, 1.0]]
 
 forward_schedule=[[0.0, 0.0], [5.0, 0.25], [25, 0.75], [30, 1.0]]
@@ -66,7 +66,6 @@ print(result)
 
 sampler = DWaveSampler("Advantage_system4.1")
 print("The coupling strength range is", sampler.properties["h_range"])
-
 
 sampler = EmbeddingComposite(DWaveSampler("Advantage_system4.1"))
 # Define the problem
@@ -101,7 +100,6 @@ problem = dimod.BinaryQuadraticModel(h, J, 0.0, dimod.SPIN) # Sample with Steepe
 solver = greedy.SteepestDescentSolver()
 solution = solver.sample(problem, num_reads = 10) 
 print(solution.aggregate())
-
 
 
 import tabu
