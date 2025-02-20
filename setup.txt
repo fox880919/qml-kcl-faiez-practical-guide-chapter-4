@@ -43,6 +43,8 @@ New dwave SDK:
 
 6- dwave config create --full
 
+// https://cloud.dwavesys.com/leap/?code=dp5ttINcv9nIzxSoqgoi7UYExsY4di&state=4b323c32d2b34aba8ae9be471a42e266 
+
 
 
 
